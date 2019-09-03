@@ -46,6 +46,10 @@
 * Queries are stream-like; recomputed on writes
 * Integrate with nilern/mistletoe
 * At least by-id and filter can only update when write is relevant
+* Queries will load through refences automatically, either by
+    - ML-like explicit refs, reproducing cycles
+    - Covering DAG with no explicit refs except cycle markers
+    - Covering tree with no explicit refs except for repetitions
 
 # Distribution
 
